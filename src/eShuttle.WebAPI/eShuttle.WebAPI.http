@@ -1,0 +1,6 @@
+@eShuttle.WebAPI_HostAddress = http://localhost:5193
+
+GET {{eShuttle.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
