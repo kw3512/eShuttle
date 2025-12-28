@@ -6,14 +6,6 @@ namespace eShuttle.WebAPI.Mappers;
 
 public static class LocationMapperExtensions
 {
-  //public static Location MapToLocation(this GetLocations.Request request)
-  //{
-  //  return new Location
-  //  {
-  //    IsActive = request.isActive
-  //  };
-  //}
-
   public static IEnumerable<GetLocations.Response> MapToReponse(this IEnumerable<Location> locations)
   {
     return locations.Select(location => new GetLocations.Response(
