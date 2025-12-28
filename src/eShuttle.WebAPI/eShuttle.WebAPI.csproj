@@ -10,6 +10,7 @@
     <Folder Include="Infrastructure\Configurations\" />
     <Folder Include="Infrastructure\Data\Migrations\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Shared\" />
   </ItemGroup>
 
 </Project>
