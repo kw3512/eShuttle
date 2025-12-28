@@ -1,6 +1,34 @@
 @eShuttle.WebAPI_HostAddress = http://localhost:5193
 
-GET {{eShuttle.WebAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+### Get All Locations
+GET {{eShuttle.WebAPI_HostAddress}}/locations
+
+### Get Location By Id
+GET {{eShuttle.WebAPI_HostAddress}}/locations/1
+
+### Add Location
+POST {{eShuttle.WebAPI_HostAddress}}/locations
+Content-Type: application/json
+
+{
+  "name": "Downtown Terminal",
+  "path": "/locations/downtown",
+  "description": "Main downtown shuttle terminal",
+  "isActive": true
+}
+
+### Update Location
+PUT {{eShuttle.WebAPI_HostAddress}}/locations/1
+Content-Type: application/json
+
+{
+  "name": "Downtown Terminal - Updated",
+  "path": "/locations/downtown-updated",
+  "description": "Updated downtown shuttle terminal",
+  "isActive": true
+}
+
+### Delete Location
+DELETE {{eShuttle.WebAPI_HostAddress}}/locations/1
 
 ###
